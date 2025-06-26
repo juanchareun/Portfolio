@@ -75,7 +75,7 @@ function App() {
 
   const education = [
     {
-      institution: "Valencia College - Associates Degree focused in Informational Technology",
+      institution: "Valencia College - Associates Degree focused on Informational Technology",
       period: "2023 - Present",
       description: "Focus on software development, databases, and networking.",
     },
@@ -219,11 +219,11 @@ function App() {
                         </div>
                       </div>
                       <div className="mockup-content">
-                        <h3>Master your day.</h3>
+                        <h3></h3>
                         <h3>
-                          <span className="highlight">Only with Real.</span>
+                          <span className="highlight"></span>
                         </h3>
-                        <div className="mockup-button">Get Started</div>
+                        <div className="mockup-button"></div>
                       </div>
                     </div>
                   </div>

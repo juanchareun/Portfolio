@@ -77,7 +77,7 @@ function App() {
     {
       institution: "Valencia College - Associate Degree focused on Informational Technology",
       period: "2023 - Present",
-      description: "Focus on software development, databases, and networking.",
+      description: "Focus on software development, databases, cloud computing, and networking.",
     },
   ]
 

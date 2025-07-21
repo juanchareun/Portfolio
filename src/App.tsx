@@ -97,7 +97,7 @@ function App() {
                   <span className="prompt">juanchareun@portfolio:~$</span> cat focus.txt
                 </div>
                 <div className="terminal-output">
-                  Cybersecurity • Network Security • Ethical Hacking
+                  Cloud Security • Network Security • Ethical Hacking
                 </div>
                 <div className="terminal-line">
                   <span className="prompt">juanchareun@portfolio:~$</span> <span className="cursor">_</span>
@@ -132,7 +132,7 @@ function App() {
                 
                 <div className="detail-item">
                   <h4>Focus Areas</h4>
-                  <p>Aspiring tech professional focused on ethical hacking, Linux, and network security. I share hands-on labs and document my learning to contribute to the cybersecurity community.</p>
+                  <p>Aspiring tech professional focused on cybersecurity. I share hands-on labs and document my learning to contribute to the community.</p>
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-container">
-          <div className="footer-logo">juan.chareun</div>
+          <div className="footer-logo">Juan Chareun - Portfolio</div>
           <div className="footer-links">
             <a 
               href="https://mail.google.com/mail/?view=cm&to=juanignaciochareun@gmail.com"

@@ -1,0 +1,111 @@
+/* Skills Section */
+.skills {
+  padding: 6rem 1.5rem;
+  background-color: #000000;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.skills-title {
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.skills-description {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: #a1a1aa;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #67e8f9;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.category-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.skill-card {
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: #404040;
+  background: #0f0f0f;
+}
+
+.skill-icon-container {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.skill-icon-img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+.skill-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e5e5e5;
+  text-align: center;
+}

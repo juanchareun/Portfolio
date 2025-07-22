@@ -1,8 +1,32 @@
-import React from 'react';
-import { Github, Linkedin, ChevronDown } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Github, Linkedin, ChevronDown, Menu, X } from 'lucide-react';
 import './App.css';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  // Handle body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.classList.remove('menu-open');
+    };
+  }, [isMenuOpen]);
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -14,9 +38,22 @@ function App() {
             </svg>
             <span className="logo-text">Juan Chareun</span>
           </a>
+          
+          {/* Desktop Navigation */}
           <div className="nav-links">
             <a href="#about" className="nav-link">About</a>
             <a href="#contact" className="nav-link">Contact</a>
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
+          {/* Mobile Navigation */}
+          <div className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
+            <a href="#about" className="mobile-nav-link" onClick={closeMenu}>About</a>
+            <a href="#contact" className="mobile-nav-link" onClick={closeMenu}>Contact</a>
           </div>
         </div>
       </nav>

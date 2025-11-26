@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg { fill: white; }
+      .fg { fill: black; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: black; }
+      .fg { fill: #06b6d4; }
+    }
+  </style>
+  
+  <!-- Background -->
+  <rect class="bg" width="180" height="180" rx="37"/>
+  
+  <!-- Replaced with cybersecurity lock icon inside terminal window -->
+  <g transform="translate(90, 90)">
+    <!-- Terminal window -->
+    <rect x="-50" y="-45" width="100" height="90" rx="4" fill="none" class="fg" stroke-width="2"/>
+    
+    <!-- Terminal title bar -->
+    <rect x="-50" y="-45" width="100" height="18" rx="4" fill="none" class="fg" stroke-width="2"/>
+    
+    <!-- Terminal dots -->
+    <circle cx="-38" cy="-36" r="2" class="fg"/>
+    <circle cx="-28" cy="-36" r="2" class="fg"/>
+    <circle cx="-18" cy="-36" r="2" class="fg"/>
+    
+    <!-- Lock icon -->
+    <g transform="translate(0, 5)">
+      <!-- Lock body -->
+      <rect x="-14" y="-4" width="28" height="24" rx="2" fill="none" class="fg" stroke-width="2"/>
+      
+      <!-- Lock shackle -->
+      <path d="M -8 -4 Q -8 -14 0 -14 Q 8 -14 8 -4" fill="none" class="fg" stroke-width="2"/>
+      
+      <!-- Lock keyhole -->
+      <circle cx="0" cy="6" r="1.5" class="fg" fill="currentColor"/>
+    </g>
+  </g>
+</svg>

@@ -15,7 +15,7 @@ export default function Projects() {
       description:
         "Built a Python tool to analyze network traffic patterns and detect potential security threats using Scapy. Includes real-time monitoring and logging capabilities.",
       tags: ["Python", "Scapy", "Network Security"],
-      github: "https://github.com/yourusername/network-analyzer",
+      github: "https://github.com/juanchareun/network-traffic-analyzer",
       demo: null,
     },
     {

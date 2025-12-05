@@ -22,7 +22,7 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: Mail,
-      label: "mail",
+      label: "Email",
       value: "juanignaciochareun@gmail.com",
       href: "mailto:juanignaciochareun@gmail.com",
     },
